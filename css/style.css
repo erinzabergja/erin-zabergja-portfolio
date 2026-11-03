@@ -1,0 +1,99 @@
+/* ===== Variables ===== */
+:root {
+    --color-background: #f8f9fa;
+    --color-text: #1a1a1a;
+    --color-accent: #0b5cad;
+    --color-footer-background: #343a40;
+    --color-footer-text: #ffffff;
+    --color-border: #cccccc;
+    --color-section: #ffffff;
+}
+/* ===== Base styles ===== */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: var(--color-accent);
+}
+a {
+    color: var(--color-accent);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ===== Header ===== */
+header {
+    background-color: var(--color-background);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-accent);
+}
+/* ===== Navigation ===== */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+nav a {
+    display: inline-block;
+    padding: 8px;
+}
+nav a:hover {
+    text-decoration: none;
+    color: var(--color-footer-background);
+}
+/* ===== Main content ===== */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+section {
+    margin-bottom: 10px;
+    background-color: var(--color-section);
+    border: 1px solid var(--color-border);
+    padding: 15px;
+}
+/* ===== About ===== */
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+/* ===== Projects ===== */
+.project-card {
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* ===== Education table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid var(--color-border);
+    padding: 8px;
+    text-align: left;
+}
+caption {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+/* ===== Footer ===== */
+footer {
+    background-color: var(--color-footer-background);
+    color: var(--color-footer-text);
+    padding: 20px;
+    text-align: center;
+}
