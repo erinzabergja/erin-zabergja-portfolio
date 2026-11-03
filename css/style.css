@@ -3,7 +3,7 @@
     --color-background: #f8f9fa;
     --color-text: #1a1a1a;
     --color-accent: #0b5cad;
-    --color-footer-background: #343a40;
+    --color-footer-background: #1b2a41;
     --color-footer-text: #ffffff;
     --color-border: #cccccc;
     --color-section: #ffffff;
@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h2 {
+h2, h3 {
     color: var(--color-accent);
 }
 a {
@@ -30,10 +30,14 @@ img {
 }
 /* ===== Header ===== */
 header {
-    background-color: var(--color-background);
+    background-color: var(--color-footer-background);
     padding: 20px;
     text-align: center;
     border-bottom: 3px solid var(--color-accent);
+}
+header h1 a {
+    color: var(--color-footer-text);
+    text-decoration: none;
 }
 /* ===== Navigation ===== */
 nav ul {
@@ -46,11 +50,13 @@ nav li {
 }
 nav a {
     display: inline-block;
-    padding: 8px;
+    padding: 8px 16px;
+    color: var(--color-footer-text);
+    text-decoration: none;
+    border-radius: 6px;
 }
 nav a:hover {
-    text-decoration: none;
-    color: var(--color-footer-background);
+    background-color: var(--color-accent);
 }
 /* ===== Main content ===== */
 main {
@@ -76,6 +82,13 @@ section {
     padding: 10px;
     margin-bottom: 10px;
 }
+.project-logo {
+    display: block;
+    margin-bottom: 10px;
+    background-color: var(--color-background);
+    padding: 10px;
+    border-radius: 20px;
+}
 /* ===== Education table ===== */
 table {
     width: 100%;
@@ -89,6 +102,10 @@ td, th {
 caption {
     font-weight: bold;
     padding-bottom: 8px;
+}
+.certificate-link {
+    display: block;
+    margin-bottom: 10px;
 }
 /* ===== Footer ===== */
 footer {
