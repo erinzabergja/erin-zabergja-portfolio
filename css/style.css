@@ -1,116 +1,151 @@
 /* ===== Variables ===== */
 :root {
-    --color-background: #f8f9fa;
-    --color-text: #1a1a1a;
-    --color-accent: #0b5cad;
-    --color-footer-background: #1b2a41;
-    --color-footer-text: #ffffff;
-    --color-border: #cccccc;
-    --color-section: #ffffff;
+  --color-background: #f8f9fa;
+  --color-text: #1a1a1a;
+  --color-accent: #0b5cad;
+  --color-footer-background: #1b2a41;
+  --color-footer-text: #ffffff;
+  --color-border: #cccccc;
+  --color-section: #ffffff;
+  --color-muted: #555555;
 }
 /* ===== Base styles ===== */
 body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 h2, h3 {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 a {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 /* ===== Header ===== */
 header {
-    background-color: var(--color-footer-background);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid var(--color-accent);
+  background-color: var(--color-footer-background);
+  background-image: linear-gradient(135deg, var(--color-footer-background), var(--color-accent));
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--color-accent);
 }
 header h1 a {
-    color: var(--color-footer-text);
-    text-decoration: none;
+  color: var(--color-footer-text);
+  text-decoration: none;
+}
+header p {
+  color: var(--color-footer-text);
+}
+header img {
+  display: block;
+  margin: 0 auto;
 }
 /* ===== Navigation ===== */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 nav li {
-    display: inline;
-    margin-right: 10px;
+  display: inline;
+  margin-right: 10px;
 }
 nav a {
-    display: inline-block;
-    padding: 8px 16px;
-    color: var(--color-footer-text);
-    text-decoration: none;
-    border-radius: 6px;
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--color-footer-text);
+  text-decoration: none;
+  border-radius: 6px;
 }
 nav a:hover {
-    background-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+.current-page {
+  background-color: var(--color-footer-text);
+  color: var(--color-footer-background);
+}
+.current-page:hover {
+  background-color: var(--color-footer-text);
+  color: var(--color-footer-background);
 }
 /* ===== Main content ===== */
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 section {
-    margin-bottom: 10px;
-    background-color: var(--color-section);
-    border: 1px solid var(--color-border);
-    padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--color-section);
+  border: 1px solid var(--color-border);
+  padding: 15px;
 }
 /* ===== About ===== */
 .profile-photo {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 /* ===== Projects ===== */
 .project-card {
-    border: 1px solid var(--color-border);
-    padding: 10px;
-    margin-bottom: 10px;
+  border: 1px solid var(--color-border);
+  padding: 10px;
+  margin-bottom: 10px;
 }
-.project-logo {
-    display: block;
-    margin-bottom: 10px;
-    background-color: var(--color-background);
-    padding: 10px;
-    border-radius: 20px;
+figure {
+  margin: 0;
+}
+.project-screenshot {
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+}
+figcaption {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+/* ===== Skills ===== */
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 0 12px 0px;
 }
 /* ===== Education table ===== */
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 td, th {
-    border: 1px solid var(--color-border);
-    padding: 8px;
-    text-align: left;
+  border: 1px solid var(--color-border);
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: var(--color-accent);
+  color: var(--color-footer-text);
 }
 caption {
-    font-weight: bold;
-    padding-bottom: 8px;
+  font-weight: bold;
+  padding-bottom: 8px;
 }
 .certificate-link {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 /* ===== Footer ===== */
 footer {
-    background-color: var(--color-footer-background);
-    color: var(--color-footer-text);
-    padding: 20px;
-    text-align: center;
+  background-color: var(--color-footer-background);
+  color: var(--color-footer-text);
+  padding: 20px;
+  text-align: center;
 }
