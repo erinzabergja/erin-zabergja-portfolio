@@ -43,6 +43,9 @@ header h1 a {
 }
 header p {
   color: var(--color-footer-text);
+  font-size: 1.1 rem;
+  letter-spacing: 0.5px;
+  margin: 12px 0;
 }
 header img {
   display: block;
